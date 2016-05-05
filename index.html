@@ -1,21 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Allan Visochek - Web Developer and Data Scientist</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+    <!--freelancer theme-->
+    <!-- <link rel='stylesheet' href='css/freelancer.css'> -->
+    <!--freelancer theme uses font-awesome I think...-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
+    <!-- jquery -->
+    <script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   </head>
-  <body>
-    <div class="container text-xs-center">
-      <h1 class="display-1">Allan Visochek</h1>
-      <p class="lead">Coming Soon, Allan Visochek's Github Profile</p>
-    </div>
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <body id="page-top" class="index">
+    <div class="container">
+      <div class="page-header">
+        <h1>Allan Visochek</h1>
+        <h4>Web Developer || Data Scientist || Problem Solver</h4>
+      </div>
+      <div id="home" class="jumbotron">
+        <p>
+          Allan Visochek is a web developer and data scientist
+          in New Haven CT. Allan is also a forum mentor at
+          <a href="http://udacity.com">udacity</a>
+          for the Data Analyst Nanodegree program.
+        </p>
+
+        <p>
+          <a href="#" id="portfolioLink" class="btn btn-default btn-lg" role="button">Portfolio</a>
+        </p>
+      </div>
+      <div id="portfolio" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1>Portfolio</h1>
+        <div class="jumbotron">
+          <h2>Clustr</h2>
+          <p>
+            Clustr is an open source data mining and visualization
+            project designed to help local governments determine
+            where resources are most needed.
+          </p>
+          <p>
+            The project uses data from the See Click Fix API and includes a
+            data pipeline for processing and uploading the data, and a web app
+            for visualizing the data.
+          </p>
+          <p>
+            The application features
+            a heatmap, a map of clusters, and a street ranking for all
+            open and acknowledged issues as of the last update.
+          </p>
+          <p><a target="blank" href="http://clustr.tech">website</a></p>
+          <p><a target="blank" href="http://github.com/avisochek/scastrap_app">application code</a></p>
+          <p><a target="blank" href="http://github.com/avisochek/scastrap_data_pipeline">data pipeline code</a></p>
+        </div>
+      </div>
+    <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
+      <!-- Tab panes -->
+      <!-- <div class="" id="home">
+        <h1>Allan Visochek</h1>
+
+      </div>
+      <div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div><div>asdf</div>
+      <div class="row thing" id="about">
+      </div>
+      <div class="row thing" id="portfolio">WORK</div>
+      <div class="row thing" class="tab-pane" id="contact">contact</div>
+    </div> -->
+  </div>
+    <script>
+      $("#portfolioLink").click(function(){
+        $("#home").hide();
+        $("#portfolio").show();
+      });
+    </script>
+    <!---->
+    <!-- <script src="js/classie.js"></script> -->
+    <!-- <script src="js/cbpAnimatedHeader.min.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <!-- <script src="js/freelancer.js"></script> -->
   </body>
 </html>
