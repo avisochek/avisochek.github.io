@@ -4,5 +4,89 @@
 
 }*/
 html,body,.container{max-width: 100%;}
-.container{text-align: center;}
+.container{
+  text-align: center;
+  opacity: 0.65;
+}
+a,a:link,a:visited,a:active,a:hover{
+  color:#fff;
+  text-decoration: none;
+}
 /*#portfolio{display:none;}*/
+body{
+  background-image: url('../img/front.jpg');
+  background-size: cover;
+  color:#fff;
+  background-attachment: fixed;
+}
+.container{
+
+}
+#front-page-header{
+  padding-top: 30vh;
+  padding-bottom:5vh;
+}
+#front-page-header h1{
+    font-size: 10vw;
+    margin:0;
+    padding:0;
+}
+#front-link-section{
+  /*width:500px;*/
+  /*text-align: left;*/
+}
+.front-link{
+  display:inline-block;
+  height:100px;
+  width:100px;
+  background-size: cover;
+  margin:10px;
+  /*background-position:*/
+   /*padding-top: 60px;*/
+   padding:0px !important;
+}
+.front-link:hover{
+    cursor:pointer;
+}
+#github-link{
+  background-image: url('../img/github.png');
+}
+#github-link:hover{
+  background-image: url('../img/github-hover.png');
+}
+#portfolio-link{
+  background-image: url('../img/portfolio.png');
+}
+#portfolio-link:hover{
+  background-image: url('../img/portfolio-hover.png');
+}
+#resume-link{
+  background-image: url('../img/resume.png');
+}
+#resume-link:hover{
+  background-image: url('../img/resume-hover.png');
+}
+#contact-link{
+  background-image: url('../img/contact.png');
+}
+#contact-link:hover{
+  background-image: url('../img/contact-hover.png');
+}
+
+#portfolio-header{}
+.portfolio-item{
+  background-color: rgba(0,0,0,0.75);
+  max-width:500px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top:5px;
+  padding-bottom:10px;
+  padding-left:20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.portfolio-item:hover{
+  font-size: 1.5rem;
+  cursor:pointer;
+}
