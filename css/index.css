@@ -1,10 +1,14 @@
-/*@media screen and (min-width)
 
-.nav{
-
-}*/
-html,body,.container{max-width: 100%;}
-.container{
+/**/
+/**/
+/**/
+/*universal styling*/
+html,body{max-width: 100%;}
+body{
+  background-image: url('../img/front.jpg');
+  background-size: cover;
+  color:#fff;
+  background-attachment: fixed;
   text-align: center;
   opacity: 0.65;
 }
@@ -12,68 +16,88 @@ a,a:link,a:visited,a:active,a:hover{
   color:#fff;
   text-decoration: none;
 }
-/*#portfolio{display:none;}*/
-body{
-  background-image: url('../img/front.jpg');
-  background-size: cover;
-  color:#fff;
-  background-attachment: fixed;
-}
-.container{
 
+/* front page stuff*/
+#front-page-headline{
+  font-size: 12vw;
+  transition: font-size 2s;
+  margin:0;
 }
-#front-page-header{
-  padding-top: 30vh;
-  padding-bottom:5vh;
+#front-page-headline.dock{
+  margin:0;
+  padding:0;
+  font-size: 50px;
 }
-#front-page-header h1{
-    font-size: 10vw;
-    margin:0;
-    padding:0;
-}
-#front-link-section{
-  /*width:500px;*/
-  /*text-align: left;*/
-}
-.front-link{
-  display:inline-block;
+        <h3 class="portfolio-tagline">Portfolio</h3>
+        <a href="clustr.html">
+        <div class="portfolio-item">
+          <h3 class="portfolio-item-title">Clustr</h2>
+          <p class="portfolio-item-description">
+            A web app to help cities make use of
+            civic issue data obtained from the
+            seeclickfix API.
+          </p>
+        </div></a>
+        <div class="portfolio-item">
+          <h3 class="portfolio-item-title">Tree Trimming Visualization</h3>
+          <p class="portfolio-item-description">
+            An interactive visualization of tree trimming requests
+            reported on the seeclickfix platfrom.
+          </p>
+        </div>
+/* styling for front links section */
+/* no styling on front link section for now*/
+#front-link-section{}
+#front-link-section.dock{}
+
+.front-icon{
   height:100px;
   width:100px;
   background-size: cover;
   margin:10px;
-  /*background-position:*/
-   /*padding-top: 60px;*/
-   padding:0px !important;
-}
-.front-link:hover{
-    cursor:pointer;
-}
-#github-link{
-  background-image: url('../img/github.png');
-}
-#github-link:hover{
-  background-image: url('../img/github-hover.png');
-}
-#portfolio-link{
-  background-image: url('../img/portfolio.png');
-}
-#portfolio-link:hover{
-  background-image: url('../img/portfolio-hover.png');
-}
-#resume-link{
-  background-image: url('../img/resume.png');
-}
-#resume-link:hover{
-  background-image: url('../img/resume-hover.png');
-}
-#contact-link{
-  background-image: url('../img/contact.png');
-}
-#contact-link:hover{
-  background-image: url('../img/contact-hover.png');
+  transition: background-image 0.5s,width 2s,height 2s;
 }
 
-#portfolio-header{}
+a.front-link{
+  display: inline-block;
+}
+
+.front-icon.dock{
+  height:50px;
+  width:50px;
+}
+.front-link.dock h3{
+  display:none;
+}
+
+
+
+/* images for front links */
+.front-link:hover{cursor:pointer;}
+#github-link{background-image: url('../img/github.png');}
+#portfolio-link{background-image: url('../img/portfolio.png');}
+#resume-link{background-image: url('../img/resume.png');}
+#contact-link{background-image: url('../img/contact.png');}
+#resume-link:hover{background-image: url('../img/resume-hover.png');}
+#portfolio-link:hover{background-image: url('../img/portfolio-hover.png');}
+#github-link:hover{background-image: url('../img/github-hover.png');}
+#contact-link:hover{background-image: url('../img/contact-hover.png');}
+
+/**/
+/**/
+/**/
+/*styling for portfolio and portfolio items*/
+h2.portfolio-headline{
+  font-size: 50px;
+  padding-top:2.5vh;
+  padding-bottom: 0;
+  margin:0,0,0,0;
+}
+h3.portfolio-tagline{
+  font-size: 35px;
+  padding:0;
+  margin:0;
+}
 .portfolio-item{
   background-color: rgba(0,0,0,0.75);
   max-width:500px;
@@ -87,6 +111,18 @@ body{
   margin-bottom: 20px;
 }
 .portfolio-item:hover{
-  font-size: 1.5rem;
   cursor:pointer;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.side-item{
+  display:hidden;
+  height:0;
+  transform: translate(1000px,0px);
+  transition: transform 1s;
+}
+
+.side-item.show{
+  display:block;
+  transform:translate(0px,0px);
 }
