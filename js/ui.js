@@ -30,7 +30,7 @@ hasher.init(); //start listening for history change
 //update URL fragment generating new history record
 hasher.setHash('');
 
-crossroads.addRoute('asdf',function(){
+crossroads.addRoute('home',function(){
   console.log("home!@")
   $("#front-link-section").removeClass("dock");
   $(".front-link").removeClass("dock");
