@@ -23,14 +23,7 @@ crossroads.routed.add(console.log, console); //log all routes
 function parseHash(newHash, oldHash){
   crossroads.parse(newHash);
 }
-hasher.initialized.add(parseHash); //parse initial hash
-hasher.changed.add(parseHash); //parse hash changes
-hasher.init(); //start listening for history change
-
-//update URL fragment generating new history record
-hasher.setHash('');
-
-crossroads.addRoute('home',function(){
+var home = crossroads.addRoute('home',function(){
   console.log("home!@")
   $("#front-link-section").removeClass("dock");
   $(".front-link").removeClass("dock");
@@ -38,8 +31,8 @@ crossroads.addRoute('home',function(){
   $("#front-page-headline").removeClass("dock");
   $(".side-item").removeClass("show");
 });
-
-crossroads.addRoute('{item}',function(item){
+// home.greedy = true;
+var item = crossroads.addRoute('/{item}',function(item){
   $("#front-link-section").addClass("dock");
   $(".front-link").addClass("dock");
   $(".front-icon").addClass("dock");
@@ -47,3 +40,10 @@ crossroads.addRoute('{item}',function(item){
   $(".side-item").removeClass("show");
   $("#"+item+"-section").addClass("show");
 });
+hasher.initialized.add(parseHash); //parse initial hash
+hasher.changed.add(parseHash); //parse hash changes
+hasher.init(); //start listening for history change
+
+
+// item.greedy=true;
+hasher.setHash(hasher.getHash());
