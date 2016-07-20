@@ -3,6 +3,8 @@
   <head>
     <title>Allan Visochek - Web Developer and Data Scientist</title>
 
+    <!-- jquery -->
+    <script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
 
     <!-- include signals, crossroads for routing.... -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-signals/1.0.0/js-signals.min.js"></script>
@@ -12,8 +14,7 @@
     <script type="text/javascript" src="js/ui.js"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="css/index.css">
-    <!-- jquery -->
-    <script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +22,11 @@
   <body>
       <!-- front links -->
       <div id="front-link-section">
-        <a href="https://github.com/avisochek" class="front-link">
+        <a href="https://github.com/avisochek" target="_blank" class="front-link">
           <h3>Github</h3>
           <div id="github-link" class="front-icon"></div>
         </a>
-        <a href="#portfolio" class="front-link">
+        <a href="#/portfolio" class="front-link">
           <h3>Portfolio</h3>
           <div id="portfolio-link" class="front-icon"></div>
         </a>
@@ -33,19 +34,19 @@
           <h3>Resume</h3>
           <div id="resume-link" class="front-icon"></div>
         </a>
-        <a class="front-link">
+        <a href="#/contact" class="front-link">
           <h3>Contact</h3>
           <div id="contact-link" class="front-icon"></div>
         </a>
       </div>
 
-      <a href="#home">
-        <h1 id="front-page-headline">Allan Visochek</h1>
-      </a>
+
+        <h1 id="front-page-headline"><a href="#/home">Allan Visochek</a></h1>
+
       <div id="portfolio-section" class="side-item">
         <h3 class="portfolio-tagline">Portfolio</h3>
         <a href="#clustr">
-        <div class="portfolio-item">
+        <div class="portfolio-link">
           <h3 class="portfolio-item-title">Clustr</h2>
           <p class="portfolio-item-description">
             A web app to help cities make use of
@@ -53,17 +54,18 @@
             seeclickfix API.
           </p>
         </div></a>
-        <div class="portfolio-item">
+        <a href="http://allanvisochek.com/tree_trimming_visualization" target="_blank">
+        <div class="portfolio-link">
           <h3 class="portfolio-item-title">Tree Trimming Visualization</h3>
           <p class="portfolio-item-description">
             An interactive visualization of tree trimming requests
             reported on the seeclickfix platfrom.
           </p>
-        </div>
+        </div></a>
       </div>
 
       <div id="clustr-section" class="side-item">
-        <h2>Clustr</h2>
+        <h3 class="portfolio-tagline">Clustr</h3>
         <div class="portfolio-item">
         <p>
           Clustr is an open source data mining and visualization
@@ -80,10 +82,15 @@
           a heatmap, a map of clusters, and a street ranking for all
           open and acknowledged issues as of the last update.
         </p>
-        <p><a target="blank" href="http://clustr.tech">website</a></p>
-        <p><a target="blank" href="http://github.com/avisochek/scastrap_app">application code</a></p>
-        <p><a target="blank" href="http://github.com/avisochek/scastrap_data_pipeline">data pipeline code</a></p>
+          <p><a target="blank" href="http://clustr.tech">website</a></p>
+          <p><a target="blank" href="http://github.com/avisochek/scastrap_app">application code</a></p>
+          <p><a target="blank" href="http://github.com/avisochek/scastrap_data_pipeline">data pipeline code</a></p>
+        </div>
       </div>
+
+      <div id="contact-section" class="side-item">
+        <h3 class="portfolio-tagline">Contact</h3>
+        <img id="contact-img" src="img/contactinfo.png"></img>
       </div>
   </body>
 </html>

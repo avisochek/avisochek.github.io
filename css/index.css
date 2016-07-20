@@ -98,7 +98,7 @@ h3.portfolio-tagline{
   padding:0;
   margin:0;
 }
-.portfolio-item{
+.portfolio-link{
   background-color: rgba(0,0,0,0.75);
   max-width:500px;
   margin-left:auto;
@@ -110,7 +110,7 @@ h3.portfolio-tagline{
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.portfolio-item:hover{
+.portfolio-link:hover{
   cursor:pointer;
   background-color: rgba(0,0,0,0.5);
 }
@@ -125,4 +125,23 @@ h3.portfolio-tagline{
 .side-item.show{
   display:block;
   transform:translate(0px,0px);
+}
+
+
+
+#contact-img{
+  width: 80vw;
+}
+
+.portfolio-item{
+  background-color: rgba(0,0,0,0.75);
+  max-width:500px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top:5px;
+  padding-bottom:10px;
+  padding-left:20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
