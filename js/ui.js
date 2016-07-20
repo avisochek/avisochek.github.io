@@ -12,7 +12,6 @@ function goHome(){
   $(".side-item").removeClass("show");
 };
 function goToItem(item){
-  console.log("fdsa");
   $("#front-link-section").addClass("dock");
   $(".front-link").addClass("dock");
   $(".front-icon").addClass("dock");
@@ -21,18 +20,12 @@ function goToItem(item){
   $("#"+item+"-section").addClass("show");
 };
 
-//initialize routes
-//setup crossroads
-// crossroads.addRoute('foo');
-// crossroads.addRoute('lorem/ipsum');
-//crossroads.routed.add(console.log, console); //log all routes
 crossroads.ignoreState = true;
 //setup hasher
 function initParse(hash){
   crossroads.parse(hash);
 };
 function parseHash(newHash, oldHash){
-  console.log(newHash);
   crossroads.parse(newHash);
 };
 hasher.initialized.add(parseHash); //parse initial hash
@@ -44,7 +37,6 @@ if (hasher.getHash()===""){
 };
 
 crossroads.addRoute('home',function(){
-  console.log("aasdf");
   goHome();
 });
 crossroads.addRoute('portfolio',function(){
@@ -56,6 +48,10 @@ crossroads.addRoute('clustr',function(){
 crossroads.addRoute('contact',function(){
   goToItem("contact")
 });
+
 $(document).ready(function(){
   crossroads.parse(hasher.getHash());
+  $(".side-item").css("transition", "transform 1s");
+  $(".front-icon").css("transition"," background-image 0.5s,width 2s,height 2s");
+  $("front-page-headline").css("transition","font-size 2s");
 });

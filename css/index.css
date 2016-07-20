@@ -20,7 +20,6 @@ a,a:link,a:visited,a:active,a:hover{
 /* front page stuff*/
 #front-page-headline{
   font-size: 12vw;
-  transition: font-size 2s;
   margin:0;
 }
 #front-page-headline.dock{
@@ -28,23 +27,7 @@ a,a:link,a:visited,a:active,a:hover{
   padding:0;
   font-size: 50px;
 }
-        <h3 class="portfolio-tagline">Portfolio</h3>
-        <a href="clustr.html">
-        <div class="portfolio-item">
-          <h3 class="portfolio-item-title">Clustr</h2>
-          <p class="portfolio-item-description">
-            A web app to help cities make use of
-            civic issue data obtained from the
-            seeclickfix API.
-          </p>
-        </div></a>
-        <div class="portfolio-item">
-          <h3 class="portfolio-item-title">Tree Trimming Visualization</h3>
-          <p class="portfolio-item-description">
-            An interactive visualization of tree trimming requests
-            reported on the seeclickfix platfrom.
-          </p>
-        </div>
+
 /* styling for front links section */
 /* no styling on front link section for now*/
 #front-link-section{}
@@ -55,7 +38,6 @@ a,a:link,a:visited,a:active,a:hover{
   width:100px;
   background-size: cover;
   margin:10px;
-  transition: background-image 0.5s,width 2s,height 2s;
 }
 
 a.front-link{
@@ -119,7 +101,6 @@ h3.portfolio-tagline{
   display:hidden;
   height:0;
   transform: translate(1500px,0px);
-  transition: transform 1s;
 }
 
 .side-item.show{
