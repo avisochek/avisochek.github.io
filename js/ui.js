@@ -51,7 +51,7 @@ crossroads.addRoute('contact',function(){
 
 $(document).ready(function(){
   crossroads.parse(hasher.getHash());
-  $(".side-item").css("transition", "transform 1s");
+  $(".side-item").css("transition", "transform 1s, width 2s");
   $(".front-icon").css("transition"," background-image 0.5s,width 2s,height 2s");
-  $("front-page-headline").css("transition","font-size 2s");
+  $("#front-page-headline").css("transition","font-size 2s");
 });

@@ -3,7 +3,11 @@
 /**/
 /**/
 /*universal styling*/
-html,body{max-width: 100%;}
+html,body{
+  max-width: 100%;
+  width:100%;
+  overflow-x:hidden;
+}
 body{
   background-image: url('../img/front.jpg');
   background-size: cover;
@@ -11,6 +15,7 @@ body{
   background-attachment: fixed;
   text-align: center;
   opacity: 0.65;
+
 }
 a,a:link,a:visited,a:active,a:hover{
   color:#fff;
@@ -109,10 +114,11 @@ h3.portfolio-tagline{
 }
 
 
-
 #contact-img{
-  width: 80vw;
+  width:100px;
+  padding-top:20vh;
 }
+.side-item.show #contact-img{width: 80vw;}
 
 .portfolio-item{
   background-color: rgba(0,0,0,0.75);
